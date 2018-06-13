@@ -14,9 +14,9 @@ public class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
     public static final int IMAGEMODE = 0;
     public static final int THUMBNAILMODE = 1;
 
-    ImageView mImageView = null;
-    ImageResultItem mItem = null;
-    int mMode = 0;
+    private ImageView mImageView = null;
+    private ImageResultItem mItem;
+    private int mMode;
 
     public LoadImageTask(ImageView imageview, ImageResultItem item, int mode) {
         mImageView = imageview;

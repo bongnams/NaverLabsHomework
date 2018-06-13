@@ -44,13 +44,13 @@ public class WebResultAdapter extends BaseAdapter {
             convertView = mInflater.inflate(mLayout, parent, false);
         }
 
-        TextView title = (TextView) convertView.findViewById(R.id.resultWebTitle);
+        TextView title = convertView.findViewById(R.id.resultWebTitle);
         title.setText(Html.fromHtml(mItems.get(position).getTitle()));
 
-        TextView description = (TextView) convertView.findViewById(R.id.resultWebDes);
+        TextView description = convertView.findViewById(R.id.resultWebDes);
         description.setText(Html.fromHtml(mItems.get(position).getDescription()));
 
-        TextView link = (TextView) convertView.findViewById(R.id.resultWebLink);
+        TextView link = convertView.findViewById(R.id.resultWebLink);
         link.setText(Html.fromHtml(mItems.get(position).getLink()));
 
         return convertView;

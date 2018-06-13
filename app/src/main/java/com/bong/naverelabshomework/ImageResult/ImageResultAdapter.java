@@ -46,7 +46,7 @@ public class ImageResultAdapter extends BaseAdapter {
             convertView = mInflater.inflate(mLayout, parent, false);
         }
 
-        ImageView thumbnail = (ImageView) convertView.findViewById(R.id.resultImageThumbnail);
+        ImageView thumbnail = convertView.findViewById(R.id.resultImageThumbnail);
         Bitmap thumbnailimage = mItems.get(position).getThumbnailImage();
         if(thumbnailimage == null) {
             thumbnail.setImageBitmap(null);
@@ -55,8 +55,7 @@ public class ImageResultAdapter extends BaseAdapter {
             thumbnail.setImageBitmap(thumbnailimage);
         }
 
-
-        TextView title = (TextView) convertView.findViewById(R.id.resultImageTitle);
+        TextView title = convertView.findViewById(R.id.resultImageTitle);
         title.setText(Html.fromHtml(mItems.get(position).getTitle()));
 
         return convertView;

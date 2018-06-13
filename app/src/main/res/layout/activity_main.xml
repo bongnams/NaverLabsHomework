@@ -143,7 +143,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/backButton"
+                    android:id="@+id/prevButton"
                     android:layout_weight="0"
                     android:text="@string/backButton"
                     android:textColor="#000000"
@@ -154,7 +154,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/forwardButton"
+                    android:id="@+id/nextButton"
                     android:layout_weight="0"
                     android:text="@string/forwardButton"
                     android:textColor="#000000"
