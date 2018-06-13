@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NavereLabsHomework</string>
+    <string name="searchEdittextHint">검색어를 입력하세요.</string>
+    <string name="searchButton">Search</string>
+    <string name="clearButton">Clear</string>
+    <string name="webTab">Web</string>
+    <string name="imageTab">Image</string>
+    <string name="emptyMessage">검색어가 입력되지 않았습니다.</string>
+    <string name="searchingMessage">검색중입니다.</string>
+    <string name="searchFailMessage">검색 실패하였습니다.</string>
+    <string name="backButton">&lt;</string>
+    <string name="forwardButton">&gt;</string>
+    <string name="closeButton">X</string>
+</resources>
+

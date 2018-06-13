@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:id="@+id/resultWebTitle"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="#999999"
+            android:textSize="15sp"
+            android:id="@+id/resultWebDes"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="#9999FF"
+            android:textSize="15sp"
+            android:id="@+id/resultWebLink"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

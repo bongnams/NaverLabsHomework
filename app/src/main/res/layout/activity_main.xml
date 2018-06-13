@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/mainLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/searchEdittext"
+                    android:singleLine="true"
+                    android:scrollHorizontally="true"
+                    android:selectAllOnFocus="true"
+                    android:hint="@string/searchEdittextHint"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:id="@+id/searchButton"
+                    android:text="@string/searchButton"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:id="@+id/clearButton"
+                    android:text="@string/clearButton"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+            <TabHost
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:id="@+id/tabHost"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tabLayout"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@android:id/tabs"
+                        android:layout_weight="0"/>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1">
+
+                        <ListView
+                            android:id="@+id/webResultView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <GridView
+                            android:id="@+id/imageResultView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:numColumns="3"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </TabHost>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/detailviewLayout"
+            android:background="#000000"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/closeButton"
+                    android:layout_weight="0"
+                    android:text="@string/closeButton"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailImage"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/detailImageTitle"
+                android:layout_weight="0"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:singleLine="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/backButton"
+                    android:layout_weight="0"
+                    android:text="@string/backButton"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_alignParentLeft="true"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forwardButton"
+                    android:layout_weight="0"
+                    android:text="@string/forwardButton"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
